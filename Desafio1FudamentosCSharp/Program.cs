@@ -1,4 +1,4 @@
-﻿namespace Desafio1FudamentosCSharp;
+﻿namespace Desafio1FundamentosCSharp;
 
 
 
@@ -13,6 +13,8 @@ class Program
             AvailableOptions.ExerciseTwo,
             AvailableOptions.ExerciseThree,
             AvailableOptions.ExerciseFour,
+            AvailableOptions.ExerciseFive,
+            AvailableOptions.ExerciseSix,
             AvailableOptions.Exit,
         };
         AvailableOptions selectedOption;
@@ -125,6 +127,21 @@ class Program
                     var inputWords = Console.ReadLine()?.Trim() ?? string.Empty;
                     Console.WriteLine($"There is/are {WordsOperations.WordsLength(inputWords)} character(s) in this word/words");
 
+                    break;
+                case AvailableOptions.ExerciseFive:
+                    Console.WriteLine("Enter license plate:");
+                    var plateNumber = Console.ReadLine()?.Trim() ?? string.Empty;
+
+                    var licensePlate = new LicensePlate { PlateNumber = plateNumber };
+                    var isValidPlateNumber = licensePlate.IsPlateNumberValid() ? "valid" : "invalid";
+                    Console.WriteLine($"The license Plate is {isValidPlateNumber}");
+
+                    break;
+                case AvailableOptions.ExerciseSix:
+                    Console.WriteLine($"Full date: {DateNowFormat.GetFullDate()}");
+                    Console.WriteLine($"Simplified date: {DateNowFormat.GetSimplifyDate()}");
+                    Console.WriteLine($"Time: {DateNowFormat.GetTwentyFourHourTime()}");
+                    Console.WriteLine($"Date with full month name: {DateNowFormat.GetDateWithFullMonthName()}");
                     break;
                 case AvailableOptions.Exit:
                     Console.WriteLine("Finish the program...");

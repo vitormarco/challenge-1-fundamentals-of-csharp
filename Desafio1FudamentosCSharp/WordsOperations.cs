@@ -1,4 +1,4 @@
-﻿namespace Desafio1FudamentosCSharp;
+﻿namespace Desafio1FundamentosCSharp;
 public static class WordsOperations
 {
     public static int WordsLength(string word)

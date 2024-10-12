@@ -1,4 +1,4 @@
-﻿namespace Desafio1FudamentosCSharp;
+﻿namespace Desafio1FundamentosCSharp;
 public class Welcome
 {
     public required string name { get; set; }

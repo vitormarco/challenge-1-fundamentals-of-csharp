@@ -1,7 +1,7 @@
-﻿namespace Desafio1FudamentosCSharp;
+﻿namespace Desafio1FundamentosCSharp;
 public enum AvailableOptions
 {
-    Exit = 0,
+    Exit = 9,
     ExerciseOne = 1,
     ExerciseTwo = 2,
     ExerciseThree = 3,

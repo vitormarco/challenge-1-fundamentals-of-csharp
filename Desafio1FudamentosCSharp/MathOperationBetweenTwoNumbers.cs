@@ -1,4 +1,4 @@
-﻿namespace Desafio1FudamentosCSharp;
+﻿namespace Desafio1FundamentosCSharp;
 static public class MathOperationBetweenTwoNumbers
 {
     static public double Sum(double firstValue, double secondValue)
